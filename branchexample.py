@@ -9,4 +9,4 @@ counter = 0
 
 while(counter < 10):
     print("counter: " + str(counter))
-    counter += 1
+    counter += 2
