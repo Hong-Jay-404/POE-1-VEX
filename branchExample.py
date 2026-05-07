@@ -1,12 +1,12 @@
 """
-Name: branchExample.py
-Author(s): Shoshana Howard and Jay Hong
-Purpose: Demonstrate GitHub branches
-Date: 5/5/2026
+Name: branchexample.py
+Author(s): Jay Hong, Shoshana Howard
+Purpose: demonstrate GitHub branches
+Date: 05/05/2026
 """
 
 counter = 0
 
-while(counter<10):
-    print("Counter: " + str(counter))
-    counter += 1
+while(counter < 10):
+    print("counter: " + str(counter))
+    counter += 2
