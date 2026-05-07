@@ -68,17 +68,17 @@ def testInertial():
 
     brain.screen.clear_screen()
     while(bumpSwitch.pressing()==False):
+       wait(10, MSEC) 
        brain.screen.set_cursor(5,1)
        brain.screen.print("Heading: " + str(inertial_1.heading()))
        brain.screen.set_cursor(6,1)
        brain.screen.print("Rotation: " + str(inertial_1.rotation()))
        brain.screen.set_cursor(8,1)
        brain.screen.print("Press the button for the bump switch to exit")
-       if (bumpSwitch.pressing() == True):
-           break
-       brain.screen.clear_line(8) 
-       brain.screen.set_cursor(8,1)
-       brain.screen.print("Inertial test terminated")
+       
+    brain.screen.clear_line(8) 
+    brain.screen.set_cursor(8,1)
+    brain.screen.print("Inertial test terminated")
 
 #------------------- Define main() function  ------------------
 def main():
