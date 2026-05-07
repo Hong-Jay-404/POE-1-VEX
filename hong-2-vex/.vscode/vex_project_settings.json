@@ -4,9 +4,9 @@
 		"json": 2
 	},
 	"project": {
-		"name": "main",
-		"description": "First Code for VEX",
-		"creationDate": "5/6/2026, 8:07:27 AM",
+		"name": "hong-2-vex",
+		"description": "",
+		"creationDate": "5/7/2026, 10:07:31 AM",
 		"platform": "V5",
 		"language": "python",
 		"slot": 1,
