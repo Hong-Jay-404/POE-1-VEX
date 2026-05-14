@@ -123,7 +123,7 @@ def driveStraight(distance, setpoint, motorVelocity):
     # Calculate the distance in terms of encoder ticks (1 tick = 1 degree)
     # Distance (ticks) = (Distance in inches / wheel circumference) * 360
     wheelCircumference = wheelDiameter * math.pi # Wheel circumference
-    distance = (distance . wheelCircumference) * 360 # Distance in ticks
+    distance = (distance/wheelCircumference) * 360 # Distance in ticks
 
     # Reset the motor encoder count to zero before driving
     leftMotor.set_position(0, DEGREES)
@@ -184,5 +184,7 @@ def main():
     bump()                # Call bump() to execute program
     inertialCalibration() # Calibrate the inertial sensor
 
-    driveStraight(90, 0, 50) # Call driveStraigh with distance, setPoint, and velocity
+    driveStraight(83.5, 0, 50) # Call driveStraigh with distance, setPoint, and velocity
+    wait(4, SECONDS) 
+    driveStraight(82.5 , 0, -50) # Call driveStraigh with distance, setPoint, and velocity
 main()
